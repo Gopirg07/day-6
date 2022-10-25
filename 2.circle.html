@@ -1,0 +1,48 @@
+<head>
+    <title>Document</title>
+</head>
+<body> 
+
+<script type="text/javascript"> 
+    class Circle{
+    
+    constructor(radius,color){
+        this.radius=radius;
+        this.color=color;
+        
+    }
+    
+  getRadius(){
+    return `Radius of the Circle= ${this.radius}`;
+  }
+  
+  getColor(){
+    return `Color of the Circle= ${this.color}`;
+    
+  }
+  
+  
+  to_string(){
+    
+    return `Circle[radius=${this.radius},color=${this.color}]`;
+  }
+  
+  getArea(){
+    
+    return (Math.PI*Math.pow(this.radius,2)).toFixed(2);
+  }
+  
+  getCircum(){
+    
+    return (2*Math.PI*this.radius).toFixed(2);
+  }
+  }
+  
+  
+  
+  var result = new Circle("1.0","red");
+  
+  console.log(result.getRadius(),result.getColor(),result.to_string(),result.getArea(),result.getCircum());
+    </script>    
+</body>
+</html>
